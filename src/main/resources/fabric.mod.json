@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "autominer",
+  "version": "${version}",
+
+  "name": "Auto Miner",
+  "description": "An automatic mining mod that helps you mine ores automatically with pathfinding.",
+  "authors": [
+    "AutoMiner Dev"
+  ],
+  "contact": {
+    "homepage": "https://example.com",
+    "sources": "https://example.com"
+  },
+
+  "license": "MIT",
+  "icon": "assets/autominer/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.example.autominer.AutoMinerClient"
+    ],
+    "main": [
+      "com.example.autominer.AutoMiner"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": ">=10.0.0"
+  }
+}
